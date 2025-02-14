@@ -1,0 +1,48 @@
+#secondSceneButton {
+    background-color: #7289da; /* Discord Blue */
+    border: none;
+    color: white;
+    padding: 12px 28px; /* Larger padding for a better size */
+    font-size: 18px; /* Bigger font size */
+    font-weight: 600; /* Bold font for better emphasis */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; /* Discord button style usually has a subtle rounded edge */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and press effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for better contrast */
+    letter-spacing: 1px; /* Slight spacing for the text */
+}
+
+/* Add a class when button should be visible */
+.fadeInButton {
+    opacity: 1;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Invisible by default */
+.noOpacity {
+    opacity: 0;
+}
+
+/* Hover effect for Discord-like style */
+#secondSceneButton:hover {
+    background-color: #5b6eae; /* Slightly darker blue when hovering */
+    transform: translateY(-2px); /* Button slightly lifts on hover */
+}
+
+/* Active effect when button is clicked */
+#secondSceneButton:active {
+    transform: translateY(0); /* Button returns to normal position on click */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

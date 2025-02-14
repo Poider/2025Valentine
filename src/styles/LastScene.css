@@ -1,0 +1,70 @@
+.lastScene{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.lastMouadIdle {
+    width: 480px; /* Original width of the sprite */
+    height: 480px; /* Original height of the sprite */
+    background-size: 1920px 480px; /* Full sprite size */
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 14%;
+    left: 42%; /* Start from left */
+    transition: transform 2s linear; /* Smooth movement */
+
+    /* Sprite Animation */
+    animation: walkCycleMouad 1s steps(4) infinite;
+
+    /* Scale the character to 2/3 size */
+    transform: scale(0.6); /* Scale to 2/3 of original size */
+    transform-origin: bottom left; /* Keep the scaling anchored at the bottom-left corner */
+}
+
+#chatboxLast{
+    bottom: 98%;
+    left: -61%;
+    transform: scaleX(-1) scale(2);
+}
+
+#chatdivLast{
+    transform: scale(2.4);
+    position: absolute;
+    z-index: 2;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    top: -77%;
+    left: -46%;
+    height: 18vh;
+    width: 59%;
+}
+
+.hoverButton{
+    width: 100px;
+    height: 50px;
+    background-color: #dd1b56;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.yesButton{
+    position: absolute;
+    bottom: 33%;
+    left: 26%;
+    width: 100px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}

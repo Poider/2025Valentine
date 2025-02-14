@@ -1,0 +1,57 @@
+.firstSceneContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Center within the parent container */
+    width: 100%; /* Take up full width */
+    color: #fff; /* White text for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.mainText {
+    font-size: 80px; /* Big text */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Movie title shadow */
+}
+
+.subText {
+    font-size: 24px; /* Smaller text */
+    font-weight: normal; /* Lighter text */
+    text-align: center;
+    color: #fff; /* Keep the text white for contrast */
+    background-color: rgba(30, 30, 30, 0.3); /* Dark background with 70% opacity */
+    padding: 10px 20px; /* Padding around the text */
+    margin-bottom: 40px; /* Spacing between the text and button */
+    width:100vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    line-height: 1.5; /* Spacing between lines for better readability */
+}
+
+.startButton {
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f6a6d8; /* Soft girly pink for the button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow for button */
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.startButton:hover {
+    background-color: #ff7fa6; /* Lighter pink on hover */
+    transform: scale(1.05); /* Button enlarges slightly on hover */
+}
+
+.startButton:active {
+    transform: scale(1); /* Reset scale when button is clicked */
+}

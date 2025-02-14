@@ -1,0 +1,106 @@
+.characterContainer {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    position: relative;
+    background-color: skyblue; /* Example background */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.characterMouadWalk {
+    width: 480px; /* Original width of the sprite */
+    height: 480px; /* Original height of the sprite */
+    background-size: 1920px 480px; /* Full sprite size */
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -6%;
+    left: 0; /* Start from left */
+    transition: transform 2s linear; /* Smooth movement */
+
+    /* Sprite Animation */
+    animation: walkCycleMouad 1s steps(4) infinite, moveRightMouad 4s linear forwards;
+
+    /* Scale the character to 2/3 size */
+    transform: scale(0.4); /* Scale to 2/3 of original size */
+    transform-origin: bottom left; /* Keep the scaling anchored at the bottom-left corner */
+}
+
+
+@keyframes walkCycleMouad {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1920px 0; /* Moves across the sprite sheet */
+    }
+}
+
+
+.characterNimaWalk {
+    width: 256px; /* Original width of one frame */
+    height: 256px; /* Original height */
+    background-size: 1024px 256px; /* Full sprite size */
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Adjust for ground level */
+    left: 0; /* Start from left */
+    transition: transform 2s linear; /* Smooth movement */
+
+    /* Sprite Animation */
+    animation: walkCycleNima 1s steps(4) infinite, moveRightNima 4s linear forwards;
+
+    /* Scale the character down to 2/3 size */
+    transform: scale(0.5); /* 2/3 of original size */
+    transform-origin: bottom left; /* Keeps scaling anchored at bottom-left */
+}
+
+.characterNimaIdle {
+    width: 256px; /* Original width of one frame */
+    height: 256px; /* Original height */
+    background-size: 1280px 256px; /* Full sprite width now includes 5 frames (256px * 5 = 1280px) */
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Adjust for ground level */
+    left: 0; /* Start from left */
+    transition: transform 2s linear; /* Smooth movement */
+
+    /* Sprite Animation */
+    animation: idleCycleNima 1s steps(5) infinite, moveRightNima 4s linear forwards; /* Steps updated to 5 */
+
+    /* Scale the character down to 2/3 size */
+    transform: scale(0.5); /* 2/3 of original size */
+    transform-origin: bottom left; /* Keeps scaling anchored at bottom-left */
+}
+
+
+/* Walking animation (with 4 frames) */
+@keyframes walkCycleNima {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1024px 0; /* Moves across the sprite sheet */
+    }
+}
+
+/* Walking animation (loops through frames) */
+
+@keyframes idleCycleNima {
+    from {
+        background-position: 0 0; /* Starting at first frame */
+    }
+    to {
+        background-position: -1280px 0; /* Moves across the sprite sheet for all 5 frames */
+    }
+}
+
+
+/* Moves the character to 80% of the screen */
+@keyframes moveRightNima {
+    from { left: 0; }
+    to { left: 70%; } /* Moves relative to parent */
+}
+
+@keyframes moveRightMouad {
+    from { left: 0; }
+    to { left: 75%; } /* Moves relative to parent */
+}

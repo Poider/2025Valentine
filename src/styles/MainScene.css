@@ -1,0 +1,73 @@
+.mainScene {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+#MouadScene {
+    position:relative;
+    flex-basis: 50%;
+    height: 100%;
+    /*background-color: #50c1a7;*/
+
+}
+
+#NimaScene {
+    position:relative;
+    flex-basis: 50%;
+    width: 50%;
+    height: 100%;
+    transform: scaleX(-1);
+    /*border: 3px solid #99aa99;*/
+    /*background-color: #987474;*/
+}
+
+.scenes {
+    overflow: hidden;
+}
+
+.fadeOutNima {
+    animation: fadeOutScene 2s forwards;
+}
+
+@keyframes fadeOutScene {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.nextButton {
+    background: linear-gradient(45deg, #ff80bf, #a8e6cf); /* Soft pink to pastel green gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Rounded corners for a smooth, modern feel */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nextButton:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+}
+
+.nextButton:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(168, 230, 207, 0.6); /* Soft glow effect on focus */
+}
+
+.nextButton:active {
+    transform: scale(0.95); /* Slight shrink on click */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}

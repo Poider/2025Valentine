@@ -1,0 +1,70 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+.chatboxContainer {
+/*    display : none;*/
+  
+}
+.chatboxImg {
+    /*   border: 3px solid red;*/
+
+    width: auto;
+    height: 30%;
+    display: block;
+    position: absolute;
+    /*opacity: 0.5;*/
+    z-index: 1;
+}
+
+#chatboxMa {
+    transform: scaleX(-1) scale(2);
+    left: 32%;
+    top: -8%;
+  
+}
+
+.chatDiv > p {
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 5%;
+    color: black;
+
+} 
+
+#chatboxNl {
+    top: 32%;
+    right: 73.1%;
+    transform: scaleY(-1) scaleX(-1.5) rotate(90deg);
+}
+
+#chatdivMa {
+    border-radius: 25px;
+    position: absolute;
+    height: 22%;
+    width: 29%;
+    left: 31.7%;
+    top: -6.3%;
+    z-index: 2;
+    
+}
+
+
+#chatdivNl {
+    position: absolute;
+    height: 25%;
+    width: 26.7%;
+    top: 34.3%;
+    right: 77.3%;
+    z-index: 2;
+}
+#chatdivNl > p {
+    color: lightpink;
+}
+
+.chatDiv {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    /*border: 2px dashed purple;*/
+    /*background-color: white;*/
+}

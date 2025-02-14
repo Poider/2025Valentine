@@ -1,0 +1,65 @@
+#morocco-map, #netherlands-map {
+    width: auto;
+    height: 104%;
+    display: block;
+    /*    border: 1px dashed red;*/
+   
+}
+
+#morocco-map {
+  
+}
+
+#netherlands-map{
+    
+}
+
+.noOpacity {
+    opacity: 0;
+    display : none;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* 2 seconds for fade-in */
+}
+
+.fade-in-map {
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* 3 seconds for map fade-in */
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeInText 1.5s infinite; /* 1.5 seconds for text fade-in */
+    animation-delay: 3s; /* Delay the text fade-in after the map */
+}
+
+.fade-in-chatbox {
+    opacity: 0;
+    animation: fadeInChatBox 1.5s forwards; /* 1.5 seconds for text fade-in */
+    animation-delay: 1.5s; /* Delay the text fade-in after the map */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInChatBox {
+    to {
+        opacity: 0.5;
+    }
+}

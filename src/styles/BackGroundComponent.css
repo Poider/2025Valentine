@@ -1,0 +1,50 @@
+
+
+.background {
+    background-color: antiquewhite;
+    background-image: url("../assets/background add on it bgcolor.svg");
+    width: 100%;
+    height: 70%;
+    /*border: 10px dashed green;*/
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+.backgroundWrapper {
+    width : 100vw;
+
+/*    border : 1px dashed white;*/
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.mapContainer {
+
+
+    position:relative;
+    height: 80%;
+}
+
+#morocco-container {
+    align-self: flex-end;
+    margin-left: 10%;
+}
+
+#netherlands-container {
+    margin-right: 10%;
+}
+
+#FirstScene{
+    border:none;
+    opacity: 0.5;
+}
+
