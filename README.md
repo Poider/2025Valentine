@@ -8,16 +8,16 @@ A small and cute React project featuring a mini Valentine-themed website where t
 
 - Two characters engaging in a playful argument.
 - Dynamic text interactions.
-- A romantic gift revealed at the end.
+- Customizable character dialogues.
+- gift revealed at the end.
 - Styled with love! 💕
 
 ---
 
 ## 🔧 Tech Stack
 
-- React (with hooks)
-- TailwindCSS for styling
-- React Router (if navigation is needed)
+- React (with hooks) and custom logic
+- Vanilla CSS
 
 ---
 
@@ -64,7 +64,6 @@ This project was created as a fun experiment with React while making something p
 
 - Mobile responsiveness.
 - More interaction and animations.
-- Customizable character dialogues.
 
 ---
 
