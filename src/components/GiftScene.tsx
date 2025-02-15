@@ -35,7 +35,7 @@ const GiftScene = () => {
                         alt="Flower"
                         className="flowerImg"
                     />
-                    <div className="messageText">Happy Valentine Baby Naaima</div>
+                    <div className="messageText">Happy Valentine Baby</div>
                 </div>
             </div>
         </div>

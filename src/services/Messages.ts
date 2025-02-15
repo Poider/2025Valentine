@@ -33,12 +33,12 @@ export const LastSceneMessagesArray: string[] = [
 ];
 
 export const HoverMessagesArray: string[] = [
-    "Ok Naaima",
+    "Ok",
     "Wakha, hate on me",
     "Sure, you want to date a white guy?",
     "Come on, you know you can't resist this lightskin charm",
     "What’s wrong with me being a bit too cool?",
-    "Remember Naaima, you know I love you, click the damn yes button",
+    "Remember babe, you know I love you, click the damn yes button",
     "Alright, I see how it is. Keep playing hard to get! Im done",
     "no but truly I'm done just go check your gift",
     "I'm refunding it if you don't check it in next 5s",
